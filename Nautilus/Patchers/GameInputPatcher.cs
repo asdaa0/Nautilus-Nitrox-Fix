@@ -18,7 +18,7 @@ internal static class GameInputPatcher
     
     public static Dictionary<GameInput.Button, InputAction> CustomButtons = new();
     public static Dictionary<GameInput.Button, List<InputBinding>> Bindings = new();
-    public static Dictionary<GameInput.Button, string> Categories = new();
+    public static Dictionary<string, HashSet<GameInput.Button>> Categories = new();
     public static List<InputActionMap> CustomActionMaps = new();
     public static HashSet<(GameInput.Button button, GameInput.Device device)> BindableButtons = new();
     public static HashSet<(GameInput.Button button, GameInput.Device device)> ConflictEvaders = new();
